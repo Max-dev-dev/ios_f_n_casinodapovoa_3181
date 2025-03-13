@@ -1,0 +1,133 @@
+{
+    "guides": [
+        {
+            "name": "Miguel Oliveira",
+            "description": "A passionate guide with a love for history, Miguel offers unique insights into the rich culture of Póvoa de Varzim.",
+            "rate": 4.8,
+            "image": "assets/images/gids/minuel_oliveira.png",
+            "categories": {
+                "culture": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/3.png",
+                            "title": "The Historical Heart of Póvoa de Varzim",
+                            "description": "This tour will take you through the most significant historical sites of the city, starting with the majestic Church of Saint Varzin, which is a symbol of the city. You will visit the Póvoa de Varzim Museum, where artifacts tell the rich history of the region. A stroll through the ancient streets will allow you to enjoy the atmosphere of the past and see old buildings and architectural monuments. At the end of the tour, you can relax in a cozy café overlooking the Lima River, enjoying local sweets and coffee."
+                        }
+                    ]
+                },
+                "beach": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/1.png",
+                            "title": "Sunny Beaches of Póvoa de Varzim",
+                            "description": "This tour invites you to enjoy the best beaches of Póvoa de Varzim, including Azul Beach. You can relax on soft sand, swim in the clear waters of the Atlantic, and participate in water sports. The program includes a beach picnic with local delicacies and fruits, as well as the opportunity to take surfing or windsurfing lessons under the guidance of experienced instructors. In the evening, you can enjoy the sunset from the beach and then take a stroll along the promenade lined with restaurants and bars."
+                        }
+                    ]
+                },
+                "gastronomy": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/7.png",
+                            "title": "Traditions of Portuguese Cuisine",
+                            "description": "This gastronomic tour will introduce you to the most iconic dishes of Portuguese cuisine at the best restaurants in Póvoa de Varzim. You will try delicacies such as bacalhau (salted cod), pastéis de nata (cream pastries), and many other traditional dishes. Each restaurant offers a unique approach to cooking, making each visit an unforgettable experience. Additionally, you will have the opportunity to participate in a cooking masterclass led by a chef who will reveal the secrets of preparing Portuguese dishes."
+                        }
+                    ]
+                }
+            },
+            "reviews": [
+                {
+                    "review_name": "Isabella Gabone",
+                    "review_text": "I had a fantastic experience with our Portuguese guide! Their extensive knowledge of the local cuisine and cultural landmarks really made the tour engaging and enjoyable.",
+                    "rate": 4,
+                    "review_date": "May 31, 2024"
+                }
+            ]
+        },
+        {
+            "name": "Clara Mendes",
+            "description": "Clara is an expert in coastal ecology, guiding tours that explore the stunning beaches and natural reserves of Póvoa de Varzim.",
+            "rate": 4.2,
+            "image": "assets/images/gids/clara_mendes.png",
+            "categories": {
+                "culture": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/6.png",
+                            "title": "Museum Route",
+                            "description": "On this excursion route, you will visit several key museums in Póvoa de Varzim, including the Museum of Modern Art and the Ethnographic Museum. Each museum offers a unique collection reflecting Portugal's cultural heritage and traditions. You will be able to see works by local artists and learn about the everyday life and culture of the region's inhabitants. The tour includes interactive exhibitions and workshops that will immerse you in art and crafts. At the end of the tour, you can discuss what you've seen with your guide over a cup of tea."
+                        }
+                    ]
+                },
+                "beach": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/5.png",
+                            "title": "Promenade Walk",
+                            "description": " On this route, you can enjoy the picturesque promenade of Póvoa de Varzim, where cozy cafés, shops, and art galleries await you. A walk along the sea will give you the chance to enjoy fresh air and magnificent views of the ocean. You can stop for a snack at one of the local restaurants serving fresh seafood and traditional Portuguese dishes. At the end of the tour, there will be a stop at a viewpoint for photos against the backdrop of the sunset."
+                        }
+                    ]
+                },
+                "gastronomy": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/4.png",
+                            "title": "Gastronomic Map of Póvoa de Varzim",
+                            "description": "In this tour, you will visit some of the best restaurants in town, each offering unique local dishes. You will be able to try both classic recipes and modern interpretations of Portuguese cuisine. The program includes tastings of wines from the Minho region, which perfectly complement the dishes. You will also receive recommendations for restaurants to visit independently after the tour."
+                        }
+                    ]
+                }
+            },
+            "reviews": [
+                {
+                    "review_name": "Nicholas Silver",
+                    "review_text": "I had an amazing time with our Portuguese guide! Their deep understanding of the local culture and history truly stood out, making each part of the tour captivating and fun.",
+                    "rate": 5,
+                    "review_date": "March 01, 2025"
+                }
+            ]
+        },
+        {
+            "name": "Ana Costa",
+            "description": "Ana is an enthusiastic local who enjoys sharing the hidden gems and stories of Póvoa de Varzim with visitors.",
+            "rate": 4.5,
+            "image": "assets/images/gids/ana_costa.png",
+            "categories": {
+                "culture": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/2.png",
+                            "title": "Cultural Heritage of Póvoa de Varzim",
+                            "description": "Immersion in the cultural heritage of Póvoa de Varzim begins with visits to iconic landmarks such as the Castle of Póvoa. You will learn about the city's history through its architecture and traditions. The tour includes visits to local galleries where you can explore works by contemporary artists and craftsmen. There will also be stops at local fairs where you can try traditional crafts and delicacies. This route is perfect for those who want to gain a deeper understanding of the region's culture and traditions."
+                        }
+                    ]
+                },
+                "beach": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/8.png",
+                            "title": "Active Beach Recreation",
+                            "description": "If you're looking for an active getaway, this tour offers you plenty of opportunities for beach entertainment. You can engage in beach volleyball, skateboarding, or even take surfing lessons. The program includes group games and competitions for those who love active recreation. After a day of activities, you can relax by the sea with a cocktail or take an evening stroll along the coast, enjoying the atmosphere of the resort."
+                        }
+                    ]
+                },
+                "gastronomy": {
+                    "items": [
+                        {
+                            "image": "assets/images/places/9.png",
+                            "title": "Local Markets and Culinary Discoveries",
+                            "description": "This tour will take you through the local markets of Póvoa de Varzim, where you can sample fresh products and unique delicacies from the region. You will visit the fish market, where you can taste seafood straight from the counter, as well as vegetable and fruit markets featuring organic products from local farmers. The program includes cooking masterclasses where you can learn to prepare traditional Portuguese dishes under the guidance of experienced chefs."
+                        }
+                    ]
+                }
+            },
+            "reviews": [
+                {
+                    "review_name": "Nicolau Silva",
+                    "review_text": "I had a fantastic experience with our Portuguese guide! Their knowledge of the local culture and history was impressive, making every moment of the tour engaging and enjoyable. I highly recommend their services to anyone looking to explore Portugal!",
+                    "rate": 5,
+                    "review_date": "Feb 28, 2024"
+                }
+            ]
+        }
+    ]
+}

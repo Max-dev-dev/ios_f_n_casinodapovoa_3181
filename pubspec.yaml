@@ -1,0 +1,41 @@
+name: casino_da_povoa
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  logger: ^2.5.0
+  share_plus: ^10.1.4
+
+  # state management
+  flutter_bloc: ^9.0.0
+
+  # local data saving
+  shared_preferences: ^2.5.2
+  freezed_annotation: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    
+  flutter_lints: ^4.0.0
+  freezed: ^2.5.7
+  json_serializable: ^6.9.0
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/gids/
+    - assets/images/places/
+    - assets/images/hotels/
+    - assets/images/entertainment/

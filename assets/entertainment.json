@@ -1,0 +1,60 @@
+{
+    "entertainment": {
+        "water": {
+            "items": [
+                {
+                    "title": "Póvoa de Varzim Beach",
+                    "description": "Póvoa de Varzim Beach is one of the most popular destinations for both locals and tourists. With its golden sands and clear waters, it offers an ideal setting for sunbathing, swimming, and various water sports. The beach is well-equipped with facilities, including showers and lifeguards, ensuring a safe environment for families. In addition to swimming, visitors can engage in activities like surfing, windsurfing, and paddleboarding. The vibrant beach atmosphere is enhanced by nearby cafes and restaurants, making it a perfect spot to relax and enjoy the coastal scenery.",
+                    "image": "assets/images/entertainment/2.png"
+                },
+                {
+                    "title": "Water Sports Center",
+                    "description": "The Water Sports Center in Póvoa de Varzim provides opportunities for adventure enthusiasts to explore the ocean through various water sports. It offers lessons and rentals for activities such as kayaking, jet skiing, and sailing. The center caters to all skill levels, making it accessible for beginners and experienced athletes alike. Guided tours are also available, allowing participants to discover the stunning coastline and marine life. With professional instructors and modern equipment, visitors can enjoy a thrilling day on the water while taking in the beautiful surroundings.",
+                    "image": "assets/images/entertainment/1.png"
+                }
+            ]
+        },
+        "restaurants": {
+            "items": [
+                {
+                    "title": "Restaurante O Pescador",
+                    "description": "Restaurante O Pescador is renowned for its fresh seafood and traditional Portuguese cuisine. Located near the beach, it offers a cozy atmosphere with stunning ocean views. The menu features a variety of dishes, including grilled fish, octopus salad, and clams in garlic sauce. The restaurant prides itself on sourcing local ingredients, ensuring that every meal is flavorful and authentic. Guests can also enjoy an extensive wine list featuring regional selections. With friendly service and a welcoming ambiance, O Pescador is a must-visit for anyone looking to savor the flavors of the sea.",
+                    "image": "assets/images/entertainment/7.png"
+                },
+                {
+                    "title": "Restaurante A Casa do Pão",
+                    "description": "A Casa do Pão is a charming eatery known for its delicious homemade bread and traditional Portuguese dishes. The restaurant offers a warm and inviting atmosphere, perfect for family gatherings or intimate dinners. Diners can indulge in a variety of local specialties, including hearty stews, grilled meats, and fresh salads. The menu changes seasonally to highlight the best ingredients available. In addition to its savory offerings, A Casa do Pão is famous for its delectable desserts, making it an ideal spot for a complete dining experience that satisfies every palate.",
+                    "image": "assets/images/entertainment/6.png"
+                }
+            ]
+        },
+        "festival": {
+            "items": [
+                {
+                    "title": "Saint John Festival",
+                    "description": "The Saint John Festival is one of the most vibrant celebrations in Póvoa de Varzim, taking place in June. This lively event features music, dancing, and traditional food stalls that fill the streets with excitement. Locals and visitors gather to celebrate with fireworks, street parties, and cultural performances that showcase the region's heritage. Participants often carry symbolic items such as leeks or hammers to symbolize good luck. The festival creates a sense of community and joy, making it an unforgettable experience for everyone involved.",
+                    "image": "assets/images/entertainment/8.png"
+                },
+                {
+                    "title": "Fish and Seafood Festival",
+                    "description": "The Fish and Seafood Festival is an annual event that attracts food lovers from all over the region. Held during the summer months, this festival celebrates Póvoa de Varzim's rich maritime culture by showcasing a variety of seafood dishes prepared by local chefs. Visitors can sample everything from grilled sardines to octopus rice while enjoying live music and entertainment. The festival not only highlights the culinary delights of the sea but also promotes local fishing traditions and sustainable practices, making it a feast for both the palate and the soul.",
+                    "image": "assets/images/entertainment/5.png"
+                }
+            ]
+        },
+        "others": {
+            "items": [
+                {
+                    "title": "Casino da Póvoa",
+                    "description": "Casino da Póvoa is a premier entertainment venue located in the heart of Póvoa de Varzim. Offering a wide range of gaming options, including slot machines, poker tables, and roulette, it caters to both casual players and seasoned gamblers. The casino features a stylish interior with various dining options, bars, and live entertainment events throughout the year. Guests can enjoy themed parties, concerts, and shows that enhance their experience. With its vibrant atmosphere and luxurious setting, Casino da Póvoa is a popular destination for nightlife enthusiasts looking for excitement.",
+                    "image": "assets/images/entertainment/4.png"
+                },
+                {
+                    "title": "Promenade along the Seafront",
+                    "description": "The promenade along the seafront in Póvoa de Varzim is a picturesque pathway perfect for leisurely strolls or bike rides. Lined with palm trees and benches, it offers breathtaking views of the Atlantic Ocean and the sandy beaches. Visitors can enjoy the fresh sea breeze while exploring charming cafes and shops along the way. The promenade is also a hub for cultural events, markets, and festivals throughout the year. Whether during the day or at sunset, this scenic route provides a delightful way to experience the beauty of Póvoa de Varzim's coastline.",
+                    "image": "assets/images/entertainment/3.png"
+                }
+            ]
+        }
+    }
+}

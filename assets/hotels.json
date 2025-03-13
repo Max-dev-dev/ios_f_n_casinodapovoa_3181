@@ -1,0 +1,35 @@
+{
+    "hotels": [
+        {
+            "title": "Venceslau Wine Boutique Hostel",
+            "description": "Welcome to Venceslau Wine Boutique Hostel, a charming retreat nestled in the heart of the wine country. Our hostel offers a unique blend of comfort and style, featuring cozy rooms adorned with local artwork and modern amenities. Enjoy our communal spaces where you can relax with fellow travelers or sip on a glass of exquisite local wine. With easy access to vineyards and picturesque landscapes, Venceslau is the perfect base for your wine adventure.",
+            "image": "assets/images/hotels/1.png",
+            "rate": 4.6,
+            "price_per_night": 52,
+            "street": "13/15 Mós Street, 4480-771 Vila do Conde, Portugal"
+        },
+        {
+            "title": "Venceslau Wine Boutique Hostel",
+            "description": "Set in thoughtfully restored building overlooking the Atlantic, THE ONE Grand Hotel da Póvoa offers neatly furnished rooms with private bathrooms on Povoa do Varzim’s seafront promenade. It features a casino next door.  This seaside hotel provides contemporary rooms which were recently fully renovated. All have an intimate décor, air conditioning and have satellite televisions. The private bathroom is equipped with a shower and hairdryer.",
+            "image": "assets/images/hotels/4.png",
+            "rate": 4.3,
+            "price_per_night": 63,
+            "street": "Largo do Passeio Alegre, No. 20, 4490-428 Póvoa de Varzim, Portugal"
+        },
+        {
+            "title": "B&B HOTEL Vila do Conde",
+            "description": "B&B HOTEL Vila do Conde is a hotel located in the town of Vila do Conde, situated 1.3 km and 1.4 km respectively from attractions such as Por do Sol Beach and Olinda Beach. This 3-star hotel offers guests air-conditioned rooms, free Wi-Fi, and private bathrooms. This accommodation option features non-smoking rooms and is located 1.3 km from the next attraction: Praia de Cachinas Beach. At B&B HOTEL Vila do Conde, each room is equipped with a flat-screen TV, a desk, and a private bathroom, along with bed linen and towels provided. The rooms also include a wardrobe. Guests at B&B HOTEL Vila do Conde are offered a daily buffet breakfast. The reception staff speak English, Spanish, and Portuguese. B&B HOTEL Vila do Conde is located 30 km and 30 km respectively from attractions such as the Casa da Música and Rotunda da Boavista. Francisco Sá Carneiro International Airport is 19 km away.",
+            "image": "assets/images/hotels/3.png",
+            "rate": 4.8,
+            "price_per_night": 78,
+            "street": "5th October Street 1024, 4480-700 Vila do Conde, Portugal"
+        },
+        {
+            "title": "Villa C Boutique Hotel",
+            "description": "The Villa C boutique hotel is located on the southern bank of the Ave River, in the town of Azurara. Guests can enjoy a luxurious spa and rooms with balconies at this 4-star hotel.  The modern rooms at Villa C boutique hotel feature a flat-screen TV and a minibar. Some rooms include a spacious seating area.  The boutique hotel is ideal for both work and leisure. It offers a restaurant, bar, spa, gym, and conference rooms. There is also a lobby bar, a grocery shop, and an outdoor lounge on site. Guests can park for free at the Villa C boutique hotel. Nearby, there are various attractions, including the Monastery of Saint Clara. The journey to Francisco Sá Carneiro Airport takes just 15 minutes.","image": "assets/images/hotels/2.png",
+            "rate": 4.5,
+            "price_per_night": 80,
+            "street": "National Road 13 - Azurara, 4480-151 Vila do Conde, Portugal"
+        }
+    ]
+}
