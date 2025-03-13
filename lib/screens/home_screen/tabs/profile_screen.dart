@@ -10,7 +10,6 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     void _showSignInDialog(BuildContext context) {
       showDialog(
         context: context,
@@ -39,6 +38,77 @@ class ProfileScreen extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
+              if (!authState.isLoggedIn)
+                Positioned(
+                  left: 16,
+                  right: 16,
+                  bottom: 50,
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () => _showSignInDialog(context),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFFFFB639),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                      ),
+                      child: const Text(
+                        "Sign in",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              else
+                Positioned(
+                  left: 16,
+                  right: 16,
+                  bottom: 50,
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        context.read<AuthCubit>().logout();
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: const Text(
+                              "You are logged out successfully",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white,
+                              ),
+                            ),
+                            backgroundColor: Colors.red,
+                            behavior: SnackBarBehavior.floating,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            margin: const EdgeInsets.all(16),
+                            duration: const Duration(seconds: 4),
+                          ),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.redAccent,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                      ),
+                      child: const Text(
+                        "Logout",
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      ),
+                    ),
+                  ),
+                ),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
@@ -51,6 +121,14 @@ class ProfileScreen extends StatelessWidget {
                         "First Name",
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.w500),
+                      )
+                    else
+                      const Center(
+                        child: Text(
+                          "Please Sign In to view user information.",
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.w500),
+                        ),
                       ),
                     const SizedBox(height: 6),
                     if (authState.isLoggedIn)
@@ -95,72 +173,6 @@ class ProfileScreen extends StatelessWidget {
                               },
                             );
                           },
-                        ),
-                      ),
-                    if (!authState.isLoggedIn)
-                      Positioned(
-                        left: 16,
-                        right: 16,
-                        bottom: 50,
-                        child: SizedBox(
-                          width: double.infinity,
-                          child: ElevatedButton(
-                            onPressed: () => _showSignInDialog(context),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFFFFB639),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30),
-                              ),
-                              padding: const EdgeInsets.symmetric(vertical: 14),
-                            ),
-                            child: const Text(
-                              "Sign in",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      )
-                    else
-                      SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton(
-                          onPressed: () {
-                            context.read<AuthCubit>().logout();
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: const Text(
-                                  "You are logged out successfully",
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                backgroundColor: Colors.red,
-                                behavior: SnackBarBehavior.floating,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
-                                margin: const EdgeInsets.all(16),
-                                duration: const Duration(seconds: 4),
-                              ),
-                            );
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.redAccent,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(100),
-                            ),
-                            padding: const EdgeInsets.symmetric(vertical: 14),
-                          ),
-                          child: const Text(
-                            "Logout",
-                            style: TextStyle(color: Colors.white, fontSize: 16),
-                          ),
                         ),
                       ),
                   ],
