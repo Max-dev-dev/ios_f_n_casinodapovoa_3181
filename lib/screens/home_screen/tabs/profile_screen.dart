@@ -1,6 +1,7 @@
 import 'package:casino_da_povoa/cubit/auth_cubit/auth_cubit.dart';
 import 'package:casino_da_povoa/cubit/booking_cubit/booking_cubit.dart';
 import 'package:casino_da_povoa/models/booking_model.dart';
+import 'package:casino_da_povoa/screens/home_screen/tabs/booking_screen.dart';
 import 'package:casino_da_povoa/widgets/sign_in_modal_window/sign_in_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -220,33 +221,30 @@ class ProfileScreen extends StatelessWidget {
                     Divider(color: Colors.grey.shade400, thickness: 1),
                     const SizedBox(height: 16),
                     if (authState.isLoggedIn)
-                      const Text(
-                        "My Bookings",
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.w700),
-                      ),
-                    const SizedBox(height: 8),
-                    if (authState.isLoggedIn)
-                      Expanded(
-                        child: BlocBuilder<BookingCubit, BookingState>(
-                          builder: (context, bookingState) {
-                            if (bookingState.isLoading) {
-                              return const Center(
-                                  child: CircularProgressIndicator());
-                            }
-                            if (bookingState.bookings.isEmpty) {
-                              return const Center(
-                                  child: Text("No bookings found"));
-                            }
-                            return ListView.builder(
-                              itemCount: bookingState.bookings.length,
-                              itemBuilder: (context, index) {
-                                final booking = bookingState.bookings[index];
-                                return _buildBookingCard(booking, context);
-                              },
-                            );
-                          },
-                        ),
+                      Column(
+                        children: [
+                          ListTile(
+                            title: const Text(
+                              "My Bookings",
+                              style: const TextStyle(
+                                color: Colors.black,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            leading: const Icon(Icons.book, color: Colors.black),
+                            trailing: const Icon(Icons.arrow_forward_ios,
+                                color: Colors.black54, size: 16),
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const BookingScreen(),
+                                ),
+                              );
+                            },
+                          ),
+                        ],
                       ),
                   ],
                 ),
