@@ -17,6 +17,59 @@ class ProfileScreen extends StatelessWidget {
       );
     }
 
+    void _showDeleteAccountDialog(BuildContext context) {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          backgroundColor: Colors.white,
+          title: const Text(
+            "Delete Account",
+            style: TextStyle(fontSize: 24.0),
+          ),
+          content: const Text(
+            "Are you sure you want to delete your account? This action cannot be undone.",
+            style: TextStyle(fontSize: 16.0),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text(
+                "Cancel",
+                style: TextStyle(color: Colors.black, fontSize: 16),
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                context.read<AuthCubit>().logout();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: const Text(
+                      "Your account has been deleted successfully",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),
+                    ),
+                    backgroundColor: Colors.red,
+                    behavior: SnackBarBehavior.floating,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    margin: const EdgeInsets.all(16),
+                    duration: const Duration(seconds: 4),
+                  ),
+                );
+              },
+              child: const Text("Delete",
+                  style: TextStyle(color: Colors.red, fontSize: 16)),
+            ),
+          ],
+        ),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 80,
@@ -115,7 +168,6 @@ class ProfileScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const SizedBox(height: 40),
                     if (authState.isLoggedIn)
                       const Text(
                         "First Name",
@@ -144,6 +196,27 @@ class ProfileScreen extends StatelessWidget {
                     if (authState.isLoggedIn)
                       _buildInfoBox(authState.phoneNumber),
                     const SizedBox(height: 16),
+                    if (authState.isLoggedIn)
+                      ElevatedButton(
+                        onPressed: () => _showDeleteAccountDialog(context),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.redAccent,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(100),
+                          ),
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                        ),
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(
+                            vertical: 4,
+                            horizontal: 8,
+                          ),
+                          child: Text(
+                            "Delete Account",
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          ),
+                        ),
+                      ),
                     Divider(color: Colors.grey.shade400, thickness: 1),
                     const SizedBox(height: 16),
                     if (authState.isLoggedIn)
